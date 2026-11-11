@@ -1,0 +1,55 @@
+
+[
+  {
+    "id": "T1",
+    "name": "Target reached",
+    "input": {
+      "attempt": 0,
+      "r2": 0.90,
+      "target_r2": 0.85,
+      "history": []
+    },
+    "expected_route": "finish",
+    "scoring": "Exact route match",
+    "pass_threshold": 1.0
+  },
+  {
+    "id": "T2",
+    "name": "Performance below target",
+    "input": {
+      "attempt": 0,
+      "r2": 0.60,
+      "target_r2": 0.85,
+      "history": []
+    },
+    "expected_route": "retry",
+    "scoring": "Exact route match",
+    "pass_threshold": 1.0
+  },
+  {
+    "id": "T3",
+    "name": "Maximum attempts reached",
+    "input": {
+      "attempt": 2,
+      "r2": 0.70,
+      "target_r2": 0.85,
+      "history": []
+    },
+    "expected_route": "finish",
+    "scoring": "Exact route match",
+    "pass_threshold": 1.0
+  },
+  {
+    "id": "T4",
+    "name": "Training failure recovery",
+    "input": {
+      "attempt": 0,
+      "model_name": "Ridge Regression",
+      "error": "Training failed",
+      "history": []
+    },
+    "expected_route": "retry",
+    "scoring": "Exact route match",
+    "pass_threshold": 1.0
+  }
+]

@@ -1,0 +1,29 @@
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Airflow
+logs/
+airflow.db
+
+# Generated outputs
+output/*.csv
+output/*.json
+output/*.mmd
+
+# Operating system / editor
+.DS_Store
+.vscode/
+.idea/
+
+config/airflow.cfg

@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+psycopg2-binary
+langgraph
+langchain-core
+langsmith
+matplotlib
+streamlit
+joblib
+python-dotenv

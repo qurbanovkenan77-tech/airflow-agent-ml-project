@@ -1,0 +1,26 @@
+
+services:
+  agent-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.agent
+    ports:
+      - "127.0.0.1:8501:8501"
+    volumes:
+      - ./agents:/app/agents
+      - ./dashboard:/app/dashboard
+      - ./evaluation:/app/evaluation
+      - ./output:/app/output
+    environment:
+      DB_HOST: postgres
+      DB_PORT: "5432"
+      DB_NAME: gapminder_ml
+      DB_USER: airflow
+      DB_PASSWORD: ${DB_PASSWORD:-airflow}
+      LANGSMITH_TRACING: ${LANGSMITH_TRACING:-false}
+      LANGSMITH_PROJECT: ${LANGSMITH_PROJECT:-gapminder-adaptive-ml}
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY:-}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped

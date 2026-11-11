@@ -1,0 +1,40 @@
+{
+    "total_tests": 4,
+    "passed": 4,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "results": [
+        {
+            "test_id": "T1",
+            "name": "Target reached",
+            "expected": "finish",
+            "actual": "finish",
+            "score": 1.0,
+            "passed": true
+        },
+        {
+            "test_id": "T2",
+            "name": "Performance below target",
+            "expected": "retry",
+            "actual": "retry",
+            "score": 1.0,
+            "passed": true
+        },
+        {
+            "test_id": "T3",
+            "name": "Maximum attempts reached",
+            "expected": "finish",
+            "actual": "finish",
+            "score": 1.0,
+            "passed": true
+        },
+        {
+            "test_id": "T4",
+            "name": "Training failure recovery",
+            "expected": "retry",
+            "actual": "retry",
+            "score": 1.0,
+            "passed": true
+        }
+    ]
+}

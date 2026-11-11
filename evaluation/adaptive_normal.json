@@ -1,0 +1,26 @@
+{
+    "best_model": {
+        "model": "Random Forest",
+        "mae": 3.4618,
+        "r2": 0.8591,
+        "status": "success"
+    },
+    "attempts": 2,
+    "rows": 1704,
+    "missing_values": 0,
+    "target_r2": 0.85,
+    "history": [
+        {
+            "model": "Ridge Regression",
+            "mae": 4.9464,
+            "r2": 0.7472,
+            "status": "success"
+        },
+        {
+            "model": "Random Forest",
+            "mae": 3.4618,
+            "r2": 0.8591,
+            "status": "success"
+        }
+    ]
+}

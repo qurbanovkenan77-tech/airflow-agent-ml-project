@@ -1,0 +1,24 @@
+{
+    "final_model": "Random Forest",
+    "final_mae": 3.4618,
+    "final_r2": 0.8591,
+    "target_r2": 0.85,
+    "target_met": true,
+    "history": [
+        {
+            "model": "Linear Regression",
+            "mae": 7.9611,
+            "r2": 0.4486
+        },
+        {
+            "model": "Decision Tree",
+            "mae": 4.3448,
+            "r2": 0.7896
+        },
+        {
+            "model": "Random Forest",
+            "mae": 3.4618,
+            "r2": 0.8591
+        }
+    ]
+}
